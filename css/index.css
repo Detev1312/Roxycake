@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+
+ul{
+     list-style-type: none;
+}
+
+nav li a{
+    text-decoration: none;
+    background-color: #ffffff;
+    color: rgb(101, 96, 96);
+    padding: 10px;
+    display: block;
+    width: 95px;
+    text-align: center;
+    
+}
+
+nav{
+    margin: auto;
+    padding: 10px;
+    height: 40px;
+    font-size: 14px;
+    background-color: white;
+}
+    
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background-color: white;
+    border-bottom: 2px solid #ffe9e9;
+}
+
+.logo{
+    height: 30px;
+    padding-bottom: 60px;
+
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #832343;
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 8px;
+
+    
+}
+
+.menu a:hover{
+    background-color: #fce4ec;
+    color: #c2185b;
+    font-weight: bold;
+}
+
+
+nav li:hover >ul{
+    display: block;
+}
+
+.banner{
+    width: 100%; 
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+    
+}
+
+@keyframes fadeIn{ 
+    to{
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff8f4;
+    color: #333;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #c75b7c;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+#sobrenosotros{
+    padding: 40px;
+    background-color: #fff8f4;
+    text-align: center;
+}
+
+#sobrenosotros h2{
+    margin-bottom: 50px;
+}
+
+.contenedor-sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.img-sobre{
+    width:  250px;
+    border: 3px solid #ffc9db;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+}
+
+.descripcion{
+    max-width: 400px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    color: #832343;
+    text-align: left;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.producto {
+    max-width: 200px;
+    text-align: center;
+}
+
+.producto p{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    color: #832343;
+    text-align: center;
+}
+
+.productos img {
+    border: 3px solid #832343;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+}
+
+
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c75b7c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.boton:hover {
+    background-color: #ff85a2;
+}
+
+
+#video {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #fff0f5;
+    margin-top: 30px;
+}
+
+#video h2 {
+    font-family: 'Playfair Display', serif;
+    color: #832343;
+    margin-bottom: 20px;
+}
+
+.contenedor-video {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contenedor-video video {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+#textofooter{
+    
+    background-color: #fff;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 1.1rem;
+    color: #5a2a3c;
+    border-top: 2px solid #ffd6e0;
+ }
+
+
+
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .menu {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+    }
+  
+    .menu li a {
+      width: 100%;
+      text-align: center;
+      padding: 12px;
+      border-bottom: 1px solid #ffe9e9;
+    }
+  
+    nav {
+      height: auto;
+      padding: 0;
+    }
+
+    .contenedor-sobre{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .descripcion{
+        text-align: center;
+    }
+  }

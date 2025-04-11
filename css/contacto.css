@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+margin: 0px;
+padding: 0px;
+    
+}
+
+
+
+ul{
+  list-style-type: none;
+}
+
+nav li a{
+  text-decoration: none;
+  background-color: #ffffff;
+  color: rgb(101, 96, 96);
+  padding: 10px;
+  display: block;
+  width: 95px;
+  text-align: center;
+    
+}
+
+nav{
+  margin: auto;
+  padding: 10px;
+  height: 40px;
+  font-size: 14px;
+  background-color: white;
+}
+    
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background-color: white;   
+}
+
+.logo{
+  height: 30px;
+  padding-bottom: 60px;
+}
+
+.menu{
+  display: flex;
+}
+
+.menu li a{
+  text-decoration: none;
+  color: #832343;
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  padding: 10px 15px;
+  border-radius: 8px;  
+}
+
+.menu a:hover{
+  background-color: #fce4ec;
+  color: #c2185b;
+  font-weight: bold;
+}
+
+
+nav li:hover >ul{
+  display: block;
+}
+
+
+.contacto {
+  background-color: #fff0f5;
+  padding: 60px 20px;
+  border-top: 2px solid #ffd6e0;
+  border-bottom: 2px solid #ffd6e0;
+}
+  
+.contacto h2 {
+  color: #b03a5b;
+  text-align: center;
+  font-size: 2rem;
+}
+  
+.contacto p {
+  color: #5a2a3c;
+  text-align: center;
+  margin-bottom: 30px;
+}
+  
+.contacto form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+  
+.contacto input,.contacto textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 12px;
+  border: 1px solid #ffc0cb;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+  
+.contacto input:focus,.contacto textarea:focus {
+  border-color: #e38aaa;
+  outline: none;
+}
+  
+.contacto button {
+  background-color: #e38aaa;
+  color: white;
+  font-size: 1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+  
+.contacto button:hover {
+  background-color: #d14e74;
+}
+  
+
+#textofooter{   
+  background-color: #fff;
+  text-align: center;
+  padding: 25px 15px;
+  font-size: 1.1rem;
+  color: #5a2a3c;
+  border-top: 2px solid #ffd6e0;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+      
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+      
+  .menu li a {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    border-bottom: 1px solid #ffe9e9;
+  }
+      
+  nav {
+    height: auto;
+    padding: 0;
+  }
+}
+      
+
